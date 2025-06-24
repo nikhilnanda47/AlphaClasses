@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+}
